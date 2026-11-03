@@ -1,0 +1,241 @@
+{
+  "global": {
+    "font": {
+      "family": {
+        "base": {
+          "$value": [
+            "Inter"
+          ],
+          "$type": "fontFamilies",
+          "$description": ""
+        }
+      },
+      "size": {
+        "h2": {
+          "$value": "25",
+          "$type": "fontSizes",
+          "$description": ""
+        },
+        "body": {
+          "$value": "16",
+          "$type": "fontSizes",
+          "$description": ""
+        },
+        "caption": {
+          "$value": "13",
+          "$type": "fontSizes",
+          "$description": ""
+        },
+        "display": {
+          "$value": "39",
+          "$type": "fontSizes",
+          "$description": ""
+        },
+        "h3": {
+          "$value": "20",
+          "$type": "fontSizes",
+          "$description": ""
+        },
+        "h1": {
+          "$value": "31",
+          "$type": "fontSizes",
+          "$description": ""
+        }
+      },
+      "weight": {
+        "semibold": {
+          "$value": "600",
+          "$type": "fontWeights",
+          "$description": ""
+        },
+        "regular": {
+          "$value": "400",
+          "$type": "fontWeights",
+          "$description": ""
+        },
+        "medium": {
+          "$value": "500",
+          "$type": "fontWeights",
+          "$description": ""
+        },
+        "bold": {
+          "$value": "700",
+          "$type": "fontWeights",
+          "$description": ""
+        }
+      }
+    },
+    "palette": {
+      "gray-50": {
+        "$value": "#F9F9FB",
+        "$type": "color",
+        "$description": ""
+      },
+      "gray-800": {
+        "$value": "#1E222A",
+        "$type": "color",
+        "$description": ""
+      },
+      "gray-900": {
+        "$value": "#111113",
+        "$type": "color",
+        "$description": ""
+      },
+      "gray-200": {
+        "$value": "#E2E8F0",
+        "$type": "color",
+        "$description": ""
+      },
+      "teal-700": {
+        "$value": "#0F766E",
+        "$type": "color",
+        "$description": ""
+      },
+      "copper-600": {
+        "$value": "#A8582A",
+        "$type": "color",
+        "$description": ""
+      }
+    },
+    "radius": {
+      "sm": {
+        "$value": "8",
+        "$type": "borderRadius",
+        "$description": ""
+      },
+      "md": {
+        "$value": "16",
+        "$type": "borderRadius",
+        "$description": ""
+      }
+    },
+    "space": {
+      "4": {
+        "$value": "4",
+        "$type": "spacing",
+        "$description": ""
+      },
+      "8": {
+        "$value": "8",
+        "$type": "spacing",
+        "$description": ""
+      },
+      "12": {
+        "$value": "12",
+        "$type": "spacing",
+        "$description": ""
+      },
+      "16": {
+        "$value": "16",
+        "$type": "spacing",
+        "$description": ""
+      },
+      "24": {
+        "$value": "24",
+        "$type": "spacing",
+        "$description": ""
+      },
+      "32": {
+        "$value": "32",
+        "$type": "spacing",
+        "$description": ""
+      },
+      "48": {
+        "$value": "48",
+        "$type": "spacing",
+        "$description": ""
+      }
+    }
+  },
+  "semantic": {
+    "color": {
+      "bg-page": {
+        "$value": "{palette.gray-50}",
+        "$type": "color",
+        "$description": ""
+      },
+      "text-primary": {
+        "$value": "{palette.gray-900}",
+        "$type": "color",
+        "$description": ""
+      },
+      "brand-primary": {
+        "$value": "{palette.gray-800}",
+        "$type": "color",
+        "$description": ""
+      },
+      "surface": {
+        "$value": "{palette.gray-200}",
+        "$type": "color",
+        "$description": ""
+      },
+      "action": {
+        "$value": "{palette.copper-600}",
+        "$type": "color",
+        "$description": ""
+      },
+      "positive": {
+        "$value": "{palette.teal-700}",
+        "$type": "color",
+        "$description": ""
+      }
+    }
+  },
+  "component": {
+    "button": {
+      "bg-primary": {
+        "$value": "{color.action}",
+        "$type": "color",
+        "$description": ""
+      },
+      "text-primary": {
+        "$value": "{color.bg-page}",
+        "$type": "color",
+        "$description": ""
+      },
+      "bg-secondary": {
+        "$value": "{color.brand-primary}",
+        "$type": "color",
+        "$description": ""
+      }
+    },
+    "card": {
+      "bg": {
+        "$value": "{color.bg-page}",
+        "$type": "color",
+        "$description": ""
+      },
+      "border": {
+        "$value": "{color.surface}",
+        "$type": "color",
+        "$description": ""
+      }
+    },
+    "badge": {
+      "bg": {
+        "$value": "{color.positive}",
+        "$type": "color",
+        "$description": ""
+      },
+      "text": {
+        "$value": "{color.bg-page}",
+        "$type": "color",
+        "$description": ""
+      }
+    }
+  },
+  "$themes": [],
+  "$metadata": {
+    "tokenSetOrder": [
+      "global",
+      "semantic",
+      "component"
+    ],
+    "activeThemes": [],
+    "activeSets": [
+      "semantic",
+      "component",
+      "global"
+    ]
+  }
+}
