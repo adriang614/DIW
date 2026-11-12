@@ -1,5 +1,4 @@
 // _layout.scss — ✍️ A1 · el esqueleto de la página de inicio con Grid (el relleno fluido, A4, ya está puesto)
-//
 // ✍️ A1. La .pagina tiene cinco hijos: .cabecera, .heroe, .principal, .consejos y .pie.
 //    - En móvil (sin media query): un grid con grid-template-areas, una columna, en ese orden.
 //    - Desde $bp-md: dos columnas (la del principal se estira; la de los consejos, un ancho fijo en rem).
@@ -11,7 +10,6 @@
 
 .pagina {
   min-height: 100dvh;
-
   display: grid;
   grid-template-columns: 1fr;
   grid-template-areas:
@@ -36,11 +34,25 @@
   }
 }
 
-.cabecera { grid-area: cabecera; }
-.heroe    { grid-area: heroe; }
-.principal { grid-area: principal; }
-.consejos  { grid-area: consejos; }
-.pie       { grid-area: pie; }
+.cabecera {
+  grid-area: cabecera;
+}
+
+.heroe {
+  grid-area: heroe;
+}
+
+.principal {
+  grid-area: principal;
+}
+
+.consejos {
+  grid-area: consejos;
+}
+
+.pie {
+  grid-area: pie;
+}
 
 .principal {
   padding: clamp(1rem, 0.5rem + 2vw, 2.5rem); // 👀 A4 · relleno fluido (ya resuelto)
