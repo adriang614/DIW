@@ -10,14 +10,31 @@
 
 .hueco-ficha {
   margin-bottom: $space-xl;
+    container-type: inline-size; 
 }
 
 .ficha {
   display: flex;
+  flex-direction: column;
   gap: $space-md;
   overflow: hidden;
   border-radius: $radius-md;
   background: var(--color-superficie);
+
+  img {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+
+  @container (min-width: 30rem) {
+    flex-direction: row;
+
+    img {
+      width: 40%;
+      object-fit: cover;
+    }
+  }
 }
 
 .ficha__cuerpo {
