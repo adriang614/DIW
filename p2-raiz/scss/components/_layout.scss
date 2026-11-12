@@ -30,7 +30,6 @@
       "pie       pie";
   }
 
-  // Desde $bp-lg: máximo y centrada
   @media (min-width: $bp-lg) {
     max-width: 75rem;
     margin-inline: auto;
