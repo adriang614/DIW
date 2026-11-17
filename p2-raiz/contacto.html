@@ -6,47 +6,73 @@
     <title>Contacto · RAÍZ</title>
     <link rel="stylesheet" href="/src/tailwind.css" />
   </head>
-  <body>
+  <body class="bg-fondo text-texto">
     <!-- ✍️ B3 · Esta página va SOLO con Tailwind (src/tailwind.css), sin SASS. Ponle las clases de utilidad:
          los colores de RAÍZ (del @theme), dos columnas desde md y un botón con hover: y focus-visible:.
          Nada de valores sueltos entre corchetes ni style="". -->
-    <header>
-      <a href="/">RAÍZ</a>
-      <nav aria-label="Principal">
-        <a href="/">Inicio</a>
-        <a href="/producto.html">Monstera</a>
-        <a href="/contacto.html" aria-current="page">Contacto</a>
+    <header
+      class="flex flex-col gap-4 bg-marca-oscuro p-4 text-white md:flex-row md:items-center md:justify-between md:px-8"
+    >
+      <a class="text-2xl font-bold" href="/">RAÍZ</a>
+      <nav class="flex gap-4" aria-label="Principal">
+        <a class="hover:underline" href="/">Inicio</a>
+        <a class="hover:underline" href="/producto.html">Monstera</a>
+        <a class="font-bold underline" href="/contacto.html" aria-current="page">Contacto</a>
       </nav>
     </header>
 
-    <main>
-      <h1>Contacto</h1>
+    <main class="mx-auto max-w-5xl p-4 md:p-8">
+      <h1 class="mb-6 text-3xl font-bold text-marca-oscuro">Contacto</h1>
 
-      <div>
-        <section aria-label="Dónde estamos">
-          <h2>El vivero</h2>
-          <p>Abrimos de lunes a sábado, de 9:00 a 14:00. Si vienes en persona, te ayudamos a elegir.</p>
-          <p>Envíos gratis desde 40 €</p>
+      <div class="grid grid-cols-1 gap-6 md:grid-cols-2">
+        <section class="rounded-lg bg-marca-suave p-4" aria-label="Dónde estamos">
+          <h2 class="mb-2 text-xl font-bold text-marca-oscuro">El vivero</h2>
+          <p class="mb-2">Abrimos de lunes a sábado, de 9:00 a 14:00. Si vienes en persona, te ayudamos a elegir.</p>
+          <p class="font-bold text-tierra">Envíos gratis desde 40 €</p>
         </section>
 
-        <form action="#">
-          <label for="nombre">
+        <form class="grid grid-cols-1 gap-4 md:grid-cols-2" action="#">
+          <label class="flex flex-col gap-1 font-bold text-marca-oscuro md:col-span-1" for="nombre">
             Nombre
-            <input id="nombre" name="nombre" autocomplete="name" required />
+            <input
+              class="w-full rounded-lg border border-marca bg-white p-2 font-normal text-texto"
+              id="nombre"
+              name="nombre"
+              autocomplete="name"
+              required
+            />
           </label>
-          <label for="correo">
+          <label class="flex flex-col gap-1 font-bold text-marca-oscuro md:col-span-1" for="correo">
             Correo
-            <input id="correo" name="correo" type="email" autocomplete="email" required />
+            <input
+              class="w-full rounded-lg border border-marca bg-white p-2 font-normal text-texto"
+              id="correo"
+              name="correo"
+              type="email"
+              autocomplete="email"
+              required
+            />
           </label>
-          <label for="mensaje">
+          <label class="flex flex-col gap-1 font-bold text-marca-oscuro md:col-span-2" for="mensaje">
             ¿En qué te ayudamos?
-            <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+            <textarea
+              class="w-full rounded-lg border border-marca bg-white p-2 font-normal text-texto"
+              id="mensaje"
+              name="mensaje"
+              rows="4"
+              required
+            ></textarea>
           </label>
-          <button type="submit">Enviar</button>
+          <button
+            class="rounded-lg bg-marca px-4 py-2 font-bold text-white hover:bg-marca-oscuro focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-tierra md:col-span-2"
+            type="submit"
+          >
+            Enviar
+          </button>
         </form>
       </div>
     </main>
 
-    <footer>RAÍZ, vivero online · Cádiz</footer>
+    <footer class="bg-marca-oscuro p-4 text-center text-white">RAÍZ, vivero online · Cádiz</footer>
   </body>
 </html>

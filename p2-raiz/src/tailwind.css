@@ -3,3 +3,12 @@
 
 /* ✍️ B3 · Los tokens de RAÍZ en un @theme: los colores marca, marca-oscuro, marca-suave, tierra, texto y fondo,
    con los MISMOS valores que scss/_tokens.scss. Así podrás escribir bg-marca, text-tierra… en contacto.html */
+
+@theme {
+  --color-marca: #2e7d32;
+  --color-marca-oscuro: #1b4d20;
+  --color-marca-suave: #edf5ea;
+  --color-tierra: #b5643c;
+  --color-texto: #1a1a1a;
+  --color-fondo: #f6f4ef;
+}
