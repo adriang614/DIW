@@ -5,3 +5,74 @@
 //    - los modificadores --oferta (que se note) y --agotada (la imagen en gris);
 //    - especificidad plana: una clase por selector (o .tarjeta-planta--mod .tarjeta-planta__elem). Sin etiquetas ni ids.
 @use "../tokens" as *;
+
+.tarjeta-planta {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: $space-sm;
+  overflow: hidden;
+  border-radius: $radius-md;
+  background: var(--color-superficie);
+}
+
+.tarjeta-planta__imagen {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.tarjeta-planta__nombre {
+  margin: 0;
+  padding-inline: $space-md;
+}
+
+.tarjeta-planta__descripcion {
+  margin: 0;
+  padding-inline: $space-md;
+}
+
+.tarjeta-planta__precio {
+  margin: 0;
+  padding-inline: $space-md;
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--color-marca);
+}
+
+// Mix con .boton, solo se coloca, el aspecto es d .boton
+.tarjeta-planta__boton {
+  align-self: flex-start;
+  margin: auto $space-md $space-md;
+}
+
+.tarjeta-planta__etiqueta {
+  position: absolute;
+  top: $space-sm;
+  left: $space-sm;
+  padding: 0.25rem $space-sm;
+  border-radius: $radius-md;
+  font-size: 0.875rem;
+  font-weight: 700;
+  color: var(--color-sobre-marca);
+  background: var(--color-marca-fuerte);
+}
+
+// Modificador --oferta 
+.tarjeta-planta--oferta {
+  outline: 2px solid var(--color-marca);
+}
+
+.tarjeta-planta--oferta .tarjeta-planta__precio {
+  font-size: 1.5rem;
+}
+
+// Modificador --agotada
+.tarjeta-planta--agotada .tarjeta-planta__imagen {
+  filter: grayscale(1);
+}
+
+.tarjeta-planta--agotada .tarjeta-planta__etiqueta {
+  color: var(--color-marca-fuerte);
+  background: var(--color-superficie);
+}
