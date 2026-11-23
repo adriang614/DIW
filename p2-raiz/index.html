@@ -43,7 +43,28 @@
       <section class="heroe" aria-label="Portada">
         <!-- ✍️ C1 · La foto más pesada de la web, igual para un móvil que para un monitor de 27″.
              Pásala a <picture> con AVIF, WebP y JPG en 480, 960 y 1440 px (las genera docker compose run --rm web npm run imagenes). -->
-        <img class="heroe__imagen" src="/img/heroe-1440.jpg" alt="heroe.jpg" loading="lazy" />
+        <picture>
+          <source
+            type="image/avif"
+            srcset="/img/heroe-480.avif 480w, /img/heroe-960.avif 960w, /img/heroe-1440.avif 1440w"
+            sizes="100vw"
+          />
+          <source
+            type="image/webp"
+            srcset="/img/heroe-480.webp 480w, /img/heroe-960.webp 960w, /img/heroe-1440.webp 1440w"
+            sizes="100vw"
+          />
+          <img
+            class="heroe__imagen"
+            src="/img/heroe-1440.jpg"
+            srcset="/img/heroe-480.jpg 480w, /img/heroe-960.jpg 960w, /img/heroe-1440.jpg 1440w"
+            sizes="100vw"
+            width="2400"
+            height="1350"
+            alt="Planta de hojas verdes grandes en una maceta de barro sobre una mesa"
+            fetchpriority="high"
+          />
+        </picture>
         <div class="heroe__texto">
           <h1 class="heroe__titulo">Plantas que llegan vivas a tu casa</h1>
           <p class="heroe__lema">Caja ventilada, guía de riego y 30 días de garantía.</p>
