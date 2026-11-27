@@ -76,3 +76,12 @@
   color: var(--color-marca-fuerte);
   background: var(--color-superficie);
 }
+
+// Modidificador tarjeta-planta--nueva
+.tarjeta-planta--nueva .tarjeta-planta__etiqueta {
+  color: var(--color-sobre-marca);
+  background: var(--color-acento);
+  position: static;
+  align-self: flex-start;
+  margin-inline: $space-md;
+}
